@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "ea_kazi_backend": {
+      "candid": "src/ea_kazi_backend/ea_kazi_backend.did",
+      "package": "ea_kazi_backend",
+      "type": "rust"
+    },
+    "ea_kazi_frontend": {
+      "dependencies": [
+        "ea_kazi_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/ea_kazi_frontend/src/index.html"
+      },
+      "source": [
+        "src/ea_kazi_frontend/assets",
+        "dist/ea_kazi_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

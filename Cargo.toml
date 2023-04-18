@@ -1,0 +1,4 @@
+[workspace]
+members = [
+    "src/ea_kazi_backend",
+]
