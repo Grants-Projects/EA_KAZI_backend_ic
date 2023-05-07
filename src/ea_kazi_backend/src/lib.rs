@@ -84,6 +84,7 @@ fn search(text: String) -> ManualReply<Option<Profile>> {
         ManualReply::one(None::<Profile>)
     })
 }
+#[derive(CandidType, Deserialize)]
 enum Roles{
     TRAINER,
     TRAINEE,
