@@ -84,10 +84,10 @@ fn search(text: String) -> ManualReply<Option<Profile>> {
         ManualReply::one(None::<Profile>)
     })
 }
-#[derive(CandidType, Deserialize)]
+#[derive(CandidType, Deserialize,Debug,Default,Clone)]
 enum Roles{
-    TRAINER,
-    TRAINEE,
+     TRAINER,
+    #[default] TRAINEE,
     EMPLOYER,
     ADMIN
 }
