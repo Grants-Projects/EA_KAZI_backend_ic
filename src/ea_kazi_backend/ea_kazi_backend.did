@@ -1,9 +1,9 @@
 type Roles = variant {
-    TRAINER,
-    TRAINEE,
-    RECRUITER,
+    TRAINER;
+    TRAINEE;
+    RECRUITER;
     ADMIN
-}
+};
 
 
 
